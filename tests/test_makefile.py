@@ -39,3 +39,11 @@ def test_branch_compares_the_tree_with_its_merge_base():
     assert 'compile --source "../src" --output build/branch' in commands
     assert "compare reports/base-$s.json reports/branch-$s.json" in commands
     assert "--strict" not in commands.split("branch-compare")[0].split("for s in")[-1]
+
+
+def test_espeak_src_is_always_quoted():
+    """Paths with spaces (e.g. "Home Assistant") must reach the shell as one word."""
+    unquoted = [line for line in MAKEFILE.splitlines()
+                if not line.startswith("#") and re.search(r'(?<!")\$\(ESPEAK_SRC\)(?!")', line)
+                and "echo" not in line and "?=" not in line]
+    assert unquoted == []

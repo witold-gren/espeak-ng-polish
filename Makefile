@@ -55,7 +55,7 @@ setup: $(CLI) ## Create the environment with piper-tts (its espeak-ng) | Utwórz
 
 doctor: setup ## Check the tools: espeak-ng compiler, sources, word list | Sprawdź narzędzia: kompilator espeak-ng, źródła, słownik
 	@command -v $(ESPEAK) >/dev/null && echo "ok   $$($(ESPEAK) --version | head -1)" || echo "MISSING $(ESPEAK) - macOS: brew install espeak-ng"
-	@test -f $(ESPEAK_SRC)/dictsource/pl_rules && echo "ok   $(ESPEAK_SRC) ($$(git -C "$(ESPEAK_SRC)" rev-parse --abbrev-ref HEAD))" || echo "MISSING $(ESPEAK_SRC) - git clone https://github.com/espeak-ng/espeak-ng.git $(ESPEAK_SRC)"
+	@test -f "$(ESPEAK_SRC)/dictsource/pl_rules" && echo "ok   $(ESPEAK_SRC) ($$(git -C "$(ESPEAK_SRC)" rev-parse --abbrev-ref HEAD))" || echo "MISSING $(ESPEAK_SRC) - git clone https://github.com/espeak-ng/espeak-ng.git $(ESPEAK_SRC)"
 	@test -f data/wikipron/pol_latn_broad.tsv && echo "ok   data/wikipron/pol_latn_broad.tsv" || echo "MISSING word list - make fetch"
 	@$(VENV)/bin/python -c "import piper, importlib.metadata as m; print('ok   piper-tts', m.version('piper-tts'))"
 
@@ -72,7 +72,7 @@ baseline: setup ## Measure espeak-ng as shipped in Piper | Zmierz espeak-ng w we
 	$(CLI) report reports/baseline-hard.json --title "Baseline: hard cases" --failures 200 --output reports/baseline-hard.md
 
 compile: setup ## Build espeak-ng-data from ESPEAK_SRC (rules + phonemes) | Zbuduj espeak-ng-data z ESPEAK_SRC (reguły + fonemy)
-	$(CLI) compile --source $(ESPEAK_SRC) --espeak $(ESPEAK) --phonemes
+	$(CLI) compile --source "$(ESPEAK_SRC)" --espeak $(ESPEAK) --phonemes
 
 candidate: compile ## Measure the changed rules | Zmierz zmienione reguły
 	$(CLI) evaluate wikipron --data-dir $(CANDIDATE) --output reports/candidate-wikipron.json
@@ -93,7 +93,7 @@ say: setup ## Show IPA before/after: make say TEXT="w domu" | Pokaż IPA przed/p
 ##@ 3. Upstream | 3. Wkład do espeak-ng
 
 patch-report: setup ## Measure each patch in patches/ alone (for PR descriptions) | Zmierz każdą łatkę z patches/ osobno (do opisów PR)
-	$(CLI) patch-report --source $(ESPEAK_SRC) --output reports/patches.md
+	$(CLI) patch-report --source "$(ESPEAK_SRC)" --output reports/patches.md
 	$(VENV)/bin/python tools/generate_patch_readme.py
 
 branch: setup ## Measure a branch: ESPEAK_SRC vs its merge base with BASE_REF | Zmierz gałąź: ESPEAK_SRC względem bazy z BASE_REF
@@ -114,7 +114,7 @@ branch: setup ## Measure a branch: ESPEAK_SRC vs its merge base with BASE_REF | 
 	@echo "==> lists of fixed and broken words: reports/branch-compare-wikipron.md, reports/branch-compare-hard.md"
 
 upstream-test: compile ## Run the Polish lines of espeak-ng tests on the candidate | Uruchom polskie testy espeak-ng na kandydacie
-	$(CLI) upstream-test --source $(ESPEAK_SRC) --espeak $(ESPEAK)
+	$(CLI) upstream-test --source "$(ESPEAK_SRC)" --espeak $(ESPEAK)
 
 ##@ 4. Development | 4. Rozwój
 
