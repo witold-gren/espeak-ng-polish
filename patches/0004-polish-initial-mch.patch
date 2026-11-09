@@ -1,0 +1,12 @@
+diff --git a/dictsource/pl_rules b/dictsource/pl_rules
+index 9a4c4dc4..fd52de4c 100644
+--- a/dictsource/pl_rules
++++ b/dictsource/pl_rules
+@@ -481,6 +481,7 @@ tekton) i (kach_   =i
+   _zie) mi (A      m;
+      _) mj (rA     majO
+      _) mc (P2t    mEk
++     _) mch        mx        // mchu, mchem (not the Mc- prefix)
+ 
+ .group	 n
+     @A) nton (_S4t ntOn

@@ -1,0 +1,13 @@
+diff --git a/phsource/ph_polish b/phsource/ph_polish
+index eb41191d..1d5af843 100644
+--- a/phsource/ph_polish
++++ b/phsource/ph_polish
+@@ -171,7 +171,7 @@ endphoneme
+ phoneme dz
+   CALL consonants/dz
+   voicingswitch ts
+-  ipa dʑ
++  ipa dz
+ endphoneme
+ 
+ phoneme ts;

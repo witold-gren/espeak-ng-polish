@@ -1,0 +1,16 @@
+diff --git a/dictsource/pl_list b/dictsource/pl_list
+index 8d81f669..964ed501 100644
+--- a/dictsource/pl_list
++++ b/dictsource/pl_list
+@@ -537,6 +537,11 @@ kpr		kapRal	$dot
+ 
+ ekg		Ekag;'E	$abbrev
+ usg		u_Esg;'E	$abbrev
++agd		$abbrev
++rtv		$abbrev
++sms		$abbrev
++mms		$abbrev
++pkp		$abbrev
+ 
+ tzn		tO||znatSy	$dot
+ itd		i||tak||dalEj	$dot

@@ -1,0 +1,12 @@
+diff --git a/dictsource/pl_rules b/dictsource/pl_rules
+index 9a4c4dc4..7c6f40cb 100644
+--- a/dictsource/pl_rules
++++ b/dictsource/pl_rules
+@@ -1008,6 +1008,7 @@ _prakt) y (L01_    =y
+ 
+ .group
+ 	~              // ? ignore ~
++        __) - (_D      m'inus  // -3
+         å          O
+         æ          E
+         ä          E

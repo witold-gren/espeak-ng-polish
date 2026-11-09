@@ -1,0 +1,12 @@
+diff --git a/dictsource/pl_rules b/dictsource/pl_rules
+index 9a4c4dc4..4ba52dec 100644
+--- a/dictsource/pl_rules
++++ b/dictsource/pl_rules
+@@ -469,7 +469,6 @@ tekton) i (kach_   =i
+         ł          w
+      A) ł (_       w_
+    mys) ł (_       w_
+-        ł (_ 
+ 
+      @) łbym (_S1  m         // reduce entries in pl_list (jonsd)
+      @) łbyś (_S1  S;

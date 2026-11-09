@@ -1,0 +1,67 @@
+diff --git a/dictsource/pl_rules b/dictsource/pl_rules
+index 9a4c4dc4..ef4ffddc 100644
+--- a/dictsource/pl_rules
++++ b/dictsource/pl_rules
+@@ -727,13 +727,11 @@ _salce) son (_++   =sOn
+ _anasta) si (L03_  sj
+   _mak) si (_      si
+   plek) si (_      si
+-        si (b      si
+         si (brz    S;i
+-        si (c      si
++     _) si (c_     si        // sic
+         si (cA     S;i
+         si (ch     S;i
+         si (cz     S;i
+-        si (d      si
+         si (dlA    S;i
+         si (dl_    S;i
+         si (dł     S;i
+@@ -745,16 +743,18 @@ _anasta) si (L03_  sj
+         si (ll     si
+         si (los    si
+         si (lv     si
+-        si (m      si
+      s) si (ma_    =i
+      s) si (mem_   =i
+      s) si (mie_   =i
+      s) si (mo_    =i
+         si (ng     si
++        si (mum_   si        // maksimum
++     s) si (mu     si        // generalissimus
++     _) si (me     si        // simens
++     _) si (mp     si        // simp
++        si (r_     si        // eliksir
+         si (nus    si
+         si (q      si
+-        si (r      si
+-        si (t      si
+      _) si (tA     S;i
+      _) si (t_     S;i
+      _) si (tk     S;i
+@@ -956,7 +956,16 @@ _prakt) y (L01_    =y
+         zi (m+     Z;i
+      _) zi (C      z_i
+   _nie) zi (C      z_i
+-        zi (C      zi
++        zi (C      Z;i       // native words: grozić, guzik, Gruzin
++    _be) zi (C      zi        // prefix bez-: bezimienny, bezinteresowny
++ _niebe) zi (C      zi
++    _ro) zi (C      zi        // prefix roz-: rozigrać, roziskrzyć
++    _kwa) zi        zi
++    _de) zi (n      zi        // dezinformacja, dezintegracja
++   _fan) zi        zi        // fanzin
++   _mue) zi        zi        // muezin
++   _zan) zi        zi        // Zanzibar
++     me) zi (s_     zi        // nemezis
+ 
+      _) z (_c      s
+      _) z (_f      s
+@@ -986,6 +995,7 @@ _prakt) y (L01_    =y
+         zz (ę_     ts
+         zz (o_     ts
+    _pi) zz         ts
++  _mue) zz         zz        // muezzin
+    _mA) zz (A      ts
+ 
+ 

@@ -1,0 +1,30 @@
+diff --git a/tests/language-pronunciation.test b/tests/language-pronunciation.test
+index 9114e620..b626e3b0 100755
+--- a/tests/language-pronunciation.test
++++ b/tests/language-pronunciation.test
+@@ -255,6 +255,25 @@ naN ta d'ota k'u Ras'oN_:_: i k'u kons'enSi_:_: i naN mest'eR komp'oRta naN deN
+ test_phon pl "m'E~Zny b'On^ts;
+ xR'On^ p'uwk tf'uj_! i S'ES;ts; fl'ak
+ z'aZuwdz; g'En^S;lO~_ j'aZ;n^" "Mężny bądź, chroń pułk twój i sześć flag. Zażółć gęślą jaźń." "Latn"
++test_phon pl "v d'Omu k'aZ;ig gR'OZ;i guZ;'ik;Em_
++dzv'On_ z bydg'OStSy
++m'ElxjOR d'OSEdw dO mx'u
++b'aRts;O~_
++,EvaNg'Elja#_
++Ok'Ej" "W domu Kazik grozi guzikiem. Dzwon z Bydgoszczy. Melchior doszedł do mchu. Barcią, Ewangelia, okej." "Polish rules: preposition w, soft zi, dg, chi, mch, final ł, loanword rules"
++test_phon pl "dzvˈɔn
++dʑvʲˈɛŋk" "dzwon, dźwięk" "Polish IPA: dz and dź differ" "--ipa"
++test_phon pl "ul'itsa
++kf;at'Ova#_
++tEl'EfOn dOm'Ovy
++n'umER p;'En^ts;
++Ok'Ej j'utRO
++,agj,Ed'E
++,Es,Em'Es
++t,EmpERat'uRa#_ m'inus tS'y
++na_ ajf'On^E
++j'utup
++g'ugl" "Ul. Kwiatowa, tel. domowy, nr pięć, ok jutro. AGD, SMS, temperatura -3. Na iPhonie, YouTube, Google." "Polish: abbreviations, acronyms, minus, loanwords"
+ test_phon pt "lw'iz ,&*@-gu'i; ,a: Z'ulj& ky_:_: b@-*&s'oI~S
+ f'E
+ S'a

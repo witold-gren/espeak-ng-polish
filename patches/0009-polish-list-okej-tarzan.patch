@@ -1,0 +1,13 @@
+diff --git a/dictsource/pl_list b/dictsource/pl_list
+index 8d81f669..a051f2e7 100644
+--- a/dictsource/pl_list
++++ b/dictsource/pl_list
+@@ -547,6 +547,8 @@ etc		Ets'EtERa	$dot
+ 
+ ok		OkOwO	$dot
+ ok		Ok'Ej $allcaps
++okej		Ok'Ej
++tarzan		t'aRzan
+ 
+ np		napS'ykwad $dot
+ tys		tyS;E~tsy $dot

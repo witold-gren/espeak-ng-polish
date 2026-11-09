@@ -1,0 +1,119 @@
+[
+{
+"name": "0001-polish-soft-zi-si",
+"text": "grozić guzik Gruzin dusimy",
+"opt": "",
+"title_en": "Soft zi/si before a consonant",
+"title_pl": "Miękkie zi/si przed spółgłoską",
+"en": "`zi (C → zi` made every non-initial *zi* + consonant hard, so whole verb classes were wrong: *grozić, wozić, razić, mrozić* (-zić, -ził, -zili), *guzik, Gruzin, Brzeziny*. Hard `si (b/c/d/m/r/t` did the same for *dusimy, Kosiba, sitwa, Grosicki*. Wiktionary data: soft in ~95% of such words; hard only after the prefixes bez-/roz-/dez- and in a few loanwords, which keep explicit rules. Related: issue #2295.",
+"pl": "Reguła `zi (C → zi` czytała każde nie-początkowe *zi* + spółgłoska twardo, przez co źle brzmiały całe klasy czasowników: *grozić, wozić, razić, mrozić*, a także *guzik, Gruzin, Brzeziny*. Twarde `si (b/c/d/m/r/t` psuły *dusimy, Kosiba, sitwa, Grosicki*. Wg Wikisłownika ~95% takich słów ma wymowę miękką; twardą tylko po przedrostkach bez-/roz-/dez- i w kilku zapożyczeniach (zostają jako wyjątki). Zgłoszenie #2295."
+},
+{
+"name": "0002-polish-dz-ipa-label",
+"text": "dzwon, dźwięk",
+"opt": "--ipa",
+"title_en": "IPA label of dz",
+"title_pl": "Etykieta IPA fonemu dz",
+"en": "Phoneme `dz` in `ph_polish` had `ipa dʑ`, the same symbol as `dz;` (dź). The sound was right, but `--ipa` output (the input of Piper and other neural TTS models) could not tell *dzwon* from *dźwięk*.",
+"pl": "Fonem `dz` w `ph_polish` miał `ipa dʑ`, czyli ten sam symbol co `dz;` (dź). Dźwięk espeak był dobry, ale wyjście `--ipa` (wejście modeli Piper i innych neuronowych TTS) nie odróżniało *dzwon* od *dźwięk*."
+},
+{
+"name": "0003-polish-chi-velar",
+"text": "Melchior Monachium",
+"opt": "",
+"title_en": "chi + vowel is velar x",
+"title_pl": "chi + samogłoska to x",
+"en": "`chi (A → hj` used the glottal `h`; Polish *ch* is always the velar `x` (*Melchior, Monachium, Banachiewicz*).",
+"pl": "`chi (A → hj` dawało krtaniowe `h`; polskie *ch* to zawsze `x` (*Melchior, Monachium, Banachiewicz*)."
+},
+{
+"name": "0004-polish-initial-mch",
+"text": "mchu mchem",
+"opt": "",
+"title_en": "Initial mch",
+"title_pl": "Początkowe mch",
+"en": "The rule for the Scottish *Mc-* prefix (`_) mc (P2t → mEk`) turned *mchu, mchem* (forms of *mech*) into *mekchu*.",
+"pl": "Reguła dla szkockiego przedrostka *Mc-* zamieniała *mchu, mchem* (od *mech*) w *mekchu*."
+},
+{
+"name": "0005-polish-dg",
+"text": "Bydgoszcz Ludgarda",
+"opt": "",
+"title_en": "dg is d+g",
+"title_pl": "dg to d+g",
+"en": "Default `dg → dZ` (English *judge*) broke *Bydgoszcz*; Polish words have d+g, English *-dge* keeps its own rule, *pidgin* gets an exception.",
+"pl": "Domyślne `dg → dZ` (jak angielskie *judge*) psuło *Bydgoszcz*; polskie słowa mają d+g, angielskie *-dge* ma własną regułę, *pidgin* wyjątek."
+},
+{
+"name": "0006-polish-final-consonant-l",
+"text": "doszedł jadł",
+"opt": "",
+"title_en": "Final consonant + ł",
+"title_pl": "Końcowe spółgłoska + ł",
+"en": "An empty rule `ł (_` silenced final ł after a consonant and left the consonant voiced (*doszedł* → [dɔʂɛd]). Now ł is kept as [w] like in *biegł, Przemysł*, matching Wiktionary.",
+"pl": "Pusta reguła `ł (_` wyciszała końcowe ł po spółgłosce i zostawiała ją dźwięczną (*doszedł* → [dɔʂɛd]). Teraz ł zostaje jako [w], jak już było w *biegł, Przemysł* i jak podaje Wikisłownik."
+},
+{
+"name": "0007-polish-narrow-loan-rules",
+"text": "barcią Ewangelia",
+"opt": "",
+"title_en": "Narrow two loanword rules",
+"title_pl": "Zawężenie dwóch reguł dla zapożyczeń",
+"en": "`ar) ci (L03_ → sij` (for *Garcia*) hit *barcią, czarcia, charcia*; `a) ng (el → ndZ` (for *Angelika*) hit *Ewangelia, angelologia*. Both now require the word start.",
+"pl": "`ar) ci (L03_ → sij` (dla *Garcia*) psuło *barcią, czarcia, charcia*; `a) ng (el → ndZ` (dla *Angelika*) psuło *Ewangelia, angelologia*. Obie wymagają teraz początku słowa."
+},
+{
+"name": "0008-polish-preposition-w",
+"text": "w domu, w ogóle, we mnie",
+"opt": "",
+"title_en": "The preposition w is [v]",
+"title_pl": "Przyimek w to [v]",
+"en": "`_) w (_ → w` and `_) w (_f/_mn → wE` used phoneme `w`, which in the Polish table is the sound of **ł**: *w domu* was read *ł domu*. The parallel rules for *z* use `z`.",
+"pl": "`_) w (_ → w` oraz `_) w (_f/_mn → wE` używały fonemu `w`, który w polskiej tabeli jest dźwiękiem **ł**: *w domu* było czytane *ł domu*. Analogiczne reguły dla *z* używają `z`."
+},
+{
+"name": "0009-polish-list-okej-tarzan",
+"text": "okej Tarzan",
+"opt": "",
+"title_en": "pl_list: okej, Tarzan",
+"title_pl": "pl_list: okej, Tarzan",
+"en": "Lowercase *okej* got initial stress (only all-caps *OK* had an entry); *Tarzan* is r+z, not ż.",
+"pl": "Pisane małymi literami *okej* miało akcent na pierwszej sylabie (wpis był tylko dla *OK*); *Tarzan* to r+z, nie ż."
+},
+{
+"name": "0011-polish-abbreviations",
+"text": "ul. Kwiatowa, tel. domowy, nr pięć, ok jutro",
+"opt": "",
+"title_en": "Common abbreviations",
+"title_pl": "Popularne skróty",
+"en": "*ul., al., tel., godz.* were read as words (*ul* is also a word, beehive) and *nr* was spelled *en er*. New entries use `$hasdot` where the bare word exists, so *ul pszczeli* is unchanged. Lowercase *ok* without a dot was read *około*; now `$hasdot` keeps *około* for *ok.* and the bare word is *okej*. *godz.* gets the nominative only; case after prepositions needs context that espeak does not have.",
+"pl": "*ul., al., tel., godz.* czytane jak słowa (*ul* to też zwykłe słowo), *nr* literowane *en er*. Nowe wpisy mają `$hasdot` tam, gdzie istnieje słowo bez kropki, więc *ul pszczeli* się nie zmienia. *ok* bez kropki było czytane *około*; teraz `$hasdot` zostawia *około* dla *ok.*, a samo *ok* to *okej*. *godz.* tylko w mianowniku; przypadek po przyimku wymaga kontekstu, którego espeak nie ma."
+},
+{
+"name": "0012-polish-acronyms",
+"text": "AGD, RTV, SMS, MMS, PKP",
+"opt": "",
+"title_en": "Acronyms spelled out",
+"title_pl": "Skrótowce literowane",
+"en": "Acronyms with a vowel were read as words: *AGD* as *akt*, *SMS* as *sms*. `$abbrev` spells them like the existing *usg, ekg*.",
+"pl": "Skrótowce z samogłoską były czytane jak słowa: *AGD* jak *akt*, *SMS* jak *sms*. `$abbrev` literuje je jak istniejące *usg, ekg*."
+},
+{
+"name": "0013-polish-minus",
+"text": "temperatura -3",
+"opt": "",
+"title_en": "Minus before a number",
+"title_pl": "Minus przed liczbą",
+"en": "A hyphen-minus before a digit was silent: *-3* was read *trzy*. The same rule as in `cs_rules` and `en_rules` (`__) - (_D`) says *minus*; *2-3* and hyphenated words are unchanged.",
+"pl": "Minus (łącznik) przed cyfrą był pomijany: *-3* czytane *trzy*. Ta sama reguła co w `cs_rules` i `en_rules` (`__) - (_D`) mówi *minus*; *2-3* i wyrazy z łącznikiem bez zmian."
+},
+{
+"name": "0014-polish-loanwords",
+"text": "na iPhonie, YouTube, Google, Facebook",
+"opt": "",
+"title_en": "Common English brand names",
+"title_pl": "Popularne angielskie nazwy",
+"en": "*iPhone* was read *i fone*, *Google* *go-ogle*, *YouTube* *jou tube*, *Facebook* *facebo-ok*. Entries in the Polish way people say them, with the most common case forms, like the existing *(e mail)* forms. *iPhone, iPad, YouTube* are split at the inner capital before the lookup, so they are multi-word entries; side effect: the lowercase phrase *i pad* also becomes *ajpad*. Worth asking the maintainers whether brand names are welcome.",
+"pl": "*iPhone* czytane *i fone*, *Google* *go-ogle*, *YouTube* *jou tube*, *Facebook* *facebo-ok*. Wpisy tak, jak mówi się po polsku, z najczęstszymi formami, jak istniejące *(e mail)*. *iPhone, iPad, YouTube* są dzielone na wielkiej literze przed wyszukaniem, więc to wpisy wielowyrazowe; skutek uboczny: fraza *i pad* małymi literami też brzmi *ajpad*. Warto zapytać opiekunów, czy chcą nazw marek."
+}
+]

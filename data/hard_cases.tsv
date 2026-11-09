@@ -1,0 +1,121 @@
+# Hand-checked Polish words and phrases that the WikiPron word list does not cover
+# (phrases, stress, prepositions) or covers badly. Columns are tab separated.
+# ipa: accepted pronunciations split by " | "; a ˈ in an alternative makes stress part of the check.
+# Notation as in ipa.normalize(): ʂ ʐ for sz ż, ties and secondary stress optional.
+# Ręcznie sprawdzone słowa i frazy; kolumna ipa może mieć kilka wariantów rozdzielonych " | ".
+text	ipa	category	note
+w domu	vdɔmu	preposition_w	espeak gave [w] (the sound of ł) for the preposition
+w ogóle	vɔgulɛ	preposition_w
+w Warszawie	vvarʂavjɛ	preposition_w
+w lesie	vlɛɕɛ	preposition_w
+w niedzielę	vɲɛdʑɛlɛ	preposition_w
+w Polsce	fpɔlstsɛ	preposition_w	devoiced before p
+w kuchni	fkuxɲi	preposition_w
+we wtorek	vɛftɔrɛk	preposition_w
+włącz światło w salonie	vwɔntʂ ɕfjatwɔ fsalɔɲɛ	preposition_w
+jak było	jagbɨwɔ	cross_word_voicing
+z kotem	skɔtɛm	cross_word_voicing
+z domu	zdɔmu	cross_word_voicing
+przez okno	pʂɛsɔknɔ | pʂɛzɔknɔ	cross_word_voicing	Warsaw vs Kraków norm
+od razu	ɔtrazu | ɔdrazu	cross_word_voicing
+z ojcem	sɔjtsɛm | zɔjtsɛm	cross_word_voicing
+grozić	ˈgrɔʑitɕ	zi_si	espeak read -zi- before a consonant as hard [zi]
+wozili	vɔˈʑili	zi_si
+guzik	ˈguʑik	zi_si
+Gruzin	ˈgruʑin	zi_si
+Brzeziny	bʐɛˈʑinɨ	zi_si
+kazirodztwo	kaʑiˈrɔtstfɔ	zi_si
+dusimy	duˈɕimɨ	zi_si
+Kosiba	kɔˈɕiba	zi_si
+sitwa	ˈɕitfa	zi_si
+zimny	ˈʑimnɨ	zi_si
+bezimienny	bɛziˈmjɛnnɨ	zi_si	prefix bez- keeps z hard
+zignorować	zignɔˈrɔvatɕ	zi_si	prefix z- keeps z hard
+dezinformacja	dɛzinfɔrˈmatsja	zi_si
+dzwon	dzvɔn	dz_dź	espeak labelled both dz and dź as [dʑ]
+rodzaj	ˈrɔdzaj	dz_dź
+Sieradzan	ɕɛˈradzan	dz_dź
+dźwięk	dʑvjɛŋk	dz_dź
+nadzieja	naˈdʑɛja	dz_dź
+odzież	ˈɔdʑɛʂ	dz_dź
+odzyskać	ɔdˈzɨskatɕ | ɔˈdzɨskatɕ	dz_dź	prefix od- + zyskać
+Bydgoszcz	ˈbɨdgɔʂtʂ	dg	espeak read dg as English [dʒ]
+Ludgarda	ludˈgarda	dg
+Melchior	ˈmɛlxjɔr	chi	espeak gave glottal [h]
+Monachium	mɔˈnaxjum	chi
+Chiny	ˈxinɨ	chi
+mchem	mxɛm	mch	espeak read initial mch as the Mc- prefix
+mchu	mxu	mch
+doszedł	ˈdɔʂɛdw | ˈdɔʂɛt	final_consonant_ł	espeak dropped ł and kept a voiced d
+jadł	jadw | jat	final_consonant_ł
+mógł	mugw | muk	final_consonant_ł
+barcią	ˈbartɕɔ̃	rci	rule for Garcia applied to native words
+czarcia	ˈtʂartɕa	rci
+Ewangelia	ɛvanˈgɛlja	ng_el	rule for Angelika applied to Ewangelia
+Angelika	andʐɛˈlika	ng_el	names in -ika keep penultimate stress (Weronika)
+marznąć	ˈmarznɔɲtɕ	rz_boundary
+zmarzlina	zmarzˈlina	rz_boundary
+Tarzan	ˈtarzan	rz_boundary	in pl_list
+matematyka	matɛˈmatɨka	stress
+fizyka	ˈfizɨka	stress
+polityka	pɔˈlitɨka	stress
+Ameryka	aˈmɛrɨka	stress
+uniwersytet	uɲivɛrˈsɨtɛt | uɲiˈvɛrsɨtɛt	stress
+rzeczpospolita	ʐɛtʂpɔspɔˈlita	stress
+zrobiliśmy	zrɔˈbiliɕmɨ	stress
+zrobilibyśmy	zrɔˈbilibɨɕmɨ	stress
+byliście	ˈbɨliɕtɕɛ	stress
+muzeum	muˈzɛum	stress
+czterysta	ˈtʂtɛrɨsta	stress
+osiemset	ˈɔɕɛmsɛt	stress
+prezydent	prɛˈzɨdɛnt	stress
+nie wiem	ˈɲɛvjɛm	stress	nie takes the stress before a one-syllable verb
+nie ma	ˈɲɛma	stress
+okej	ɔˈkɛj	stress	in pl_list
+Maria	ˈmarja	i_before_vowel
+partia	ˈpartja	i_before_vowel
+kuchnia	ˈkuxɲa	i_before_vowel
+radio	ˈradjɔ	i_before_vowel
+Albania	alˈbaɲja	i_before_vowel	loanword -nia, not fixed yet
+Dania	ˈdaɲja	i_before_vowel	not fixed yet
+wąs	vɔ̃s	nasal
+mięso	ˈmjɛ̃sɔ	nasal
+kąt	kɔnt	nasal
+ręka	ˈrɛŋka	nasal
+idę	ˈidɛ	nasal
+wziąć	vʑɔɲtɕ | vʑɔ̃tɕ	nasal
+gęś	gɛ̃ɕ | gɛɲɕ	nasal
+dziewiętnaście	dʑɛvjɛtˈnaɕtɕɛ | dʑɛvjɛntˈnaɕtɕɛ	numbers
+pięćdziesiąt	pjɛɲˈdʑɛɕɔnt	numbers
+tysiąc	ˈtɨɕɔnts	numbers
+trzy	tʂɨ	clusters
+drzwi	dʐvi	clusters
+zszyć	sʂɨtɕ | ʂʂɨtɕ	clusters
+Wrocław	ˈvrɔtswaf	places
+Gdańsk	gdaɲsk	places
+Łódź	wutɕ	places
+ul. Kwiatowa	ulˈitsa kfjatˈɔva	abbreviations	ul. read as the word ul (beehive); $hasdot keeps ul without a dot
+ul pszczeli	ul pʂtʂɛli	abbreviations	no dot: the word ul
+al. Róż	alˈɛja ˈruʂ	abbreviations
+tel. domowy	tɛlɛfɔn dɔmɔvɨ	abbreviations
+w godz. pracy	v gɔdʑina pratsɨ	abbreviations	nominative only, pl_tts declines it
+nr 5	numɛr pjɛɲtɕ	abbreviations	was spelled en er
+ok. 5 minut	ɔkɔwɔ pjɛɲtɕ minut	abbreviations
+ok jutro	ɔkɛj jutrɔ	abbreviations	without a dot it is okej, not około
+AGD	agjɛdɛ	acronyms	was read as the word akt
+RTV	ɛrtɛfaw	acronyms
+SMS	ɛsɛmɛs	acronyms	was read as one word
+MMS	ɛmɛmɛs	acronyms
+PKP	pɛkapɛ	acronyms
+-3	minus tʂɨ	minus	the minus sign was silent
+temperatura -5	tɛmpɛratura minus pjɛɲtɕ	minus
+od -5 do 5	ɔt minus pjɛɲdʑ dɔ pjɛɲtɕ | ɔt minus pjɛɲtɕ dɔ pjɛɲtɕ	minus
+iPhone	ajfɔn	loanwords	camelCase is split into two words before the lookup
+na iPhonie	na ajfɔɲɛ	loanwords
+iPad	ajpat	loanwords
+YouTube	jutup	loanwords
+na YouTubie	na jutubjɛ	loanwords
+Google	gugl | gukl	loanwords
+Google'a	gugla	loanwords
+Facebook	fɛjzbuk | fɛjsbuk	loanwords
+Bluetooth	blutuf | blutut	loanwords	Wiktionary: blutuf, as espeak already says

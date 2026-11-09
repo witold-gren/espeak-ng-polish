@@ -1,0 +1,14 @@
+diff --git a/dictsource/pl_rules b/dictsource/pl_rules
+index 9a4c4dc4..34cdc73d 100644
+--- a/dictsource/pl_rules
++++ b/dictsource/pl_rules
+@@ -227,7 +227,8 @@ _niepona) dg       dg
+ _niepopo) dg       dg
+ _niepoo) dg        dg
+         dge (_     dZ
+-        dg         dZ
++    _pi) dg         dZ        // pidgin
++        dg         dg        // Bydgoszcz, Ludgarda
+ 
+ 
+ .group	 e

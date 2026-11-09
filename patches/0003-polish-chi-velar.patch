@@ -1,0 +1,13 @@
+diff --git a/dictsource/pl_rules b/dictsource/pl_rules
+index 9a4c4dc4..80648dca 100644
+--- a/dictsource/pl_rules
++++ b/dictsource/pl_rules
+@@ -118,7 +118,7 @@
+         ch (err    S
+         ch (ev     S
+         ch (i      C
+-        chi (A     hj
++        chi (A     xj        // Melchior, Monachium: velar x, not glottal h
+    psy) chi (a     hi
+      _) chic (agA  Sik
+      _) chie (f    tSi
