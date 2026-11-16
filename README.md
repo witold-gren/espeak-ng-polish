@@ -17,7 +17,10 @@ The patches in [patches/](patches/), measured against espeak-ng `724808c` (the v
 Upstream status:
 - merged: [#2644](https://github.com/espeak-ng/espeak-ng/pull/2644) (preposition *w*), [#2645](https://github.com/espeak-ng/espeak-ng/pull/2645) (IPA label of *dz*), [#2646](https://github.com/espeak-ng/espeak-ng/pull/2646) (minus before a number);
 - open: [#2679](https://github.com/espeak-ng/espeak-ng/pull/2679) (*okej*, *Tarzan*), [#2680](https://github.com/espeak-ng/espeak-ng/pull/2680) (acronyms), [#2681](https://github.com/espeak-ng/espeak-ng/pull/2681) (abbreviations), [#2695](https://github.com/espeak-ng/espeak-ng/pull/2695) (final *ł* after a consonant), [#2696](https://github.com/espeak-ng/espeak-ng/pull/2696) (foreign-name rules catching *mchu*, *barcią*), [#2697](https://github.com/espeak-ng/espeak-ng/pull/2697) (brand names);
-- waiting for [#2631](https://github.com/espeak-ng/espeak-ng/pull/2631) (another contributor's Polish fixes, which cover patches 0001, 0003 and 0005): soft *si* before a consonant and the *Angelika* rule (*angelizm*);
+- ready, waiting for [#2631](https://github.com/espeak-ng/espeak-ng/pull/2631) (another contributor's Polish fixes, which cover patches 0001, 0003 and 0005); both branches are built on top of it:
+  - [`polish-soft-si-before-consonant`](https://github.com/witold-gren/espeak-ng/tree/polish-soft-si-before-consonant): soft *si* before b, c, d, r (*Kosiba*, *Grosicki*, *sideł*), 22 words fixed, 0 broken;
+  - [`polish-angelika-rule`](https://github.com/witold-gren/espeak-ng/tree/polish-angelika-rule): *dż* only in *Angelika*, not in *angelizm*, *angelologia*, 14 words fixed, 0 broken;
+  - after #2631 is merged: `git fetch upstream && git switch <branch> && git rebase --onto upstream/master pr-2631 && git push --force-with-lease`, then open the PR; the commit message is the PR description;
 - overview and discussion: issue [#2643](https://github.com/espeak-ng/espeak-ng/issues/2643).
 
 ## Requirements
@@ -126,6 +129,8 @@ GPL-3.0-or-later, the same as espeak-ng (the patches are changes to espeak-ng). 
 Narzędzie mierzy polskie reguły zamiany tekstu na fonemy w [espeak-ng](https://github.com/espeak-ng/espeak-ng). Porównuje dowolną gałąź espeak-ng z jej bazą na 148 896 słowach z polskiego Wikisłownika i na ręcznie sprawdzonej liście trudnych przypadków, a potem pokazuje, które słowa się poprawiły, a które pogorszyły.
 
 Wyniki i stan PR-ów w espeak-ng są w tabeli na górze strony.
+
+Dwie gałęzie czekają w forku na scalenie #2631 (zbudowane na nim): `polish-soft-si-before-consonant` (miękkie *si* przed b, c, d, r) i `polish-angelika-rule` (*dż* tylko w *Angelika*). Po scaleniu #2631 wystarczy rebase na `upstream/master` (polecenie wyżej) i otwarcie PR; opis PR jest w treści commitu.
 
 ### Wymagania
 
